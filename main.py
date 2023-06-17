@@ -1,7 +1,6 @@
 from typing import List
-
-def get_requirements(file_path : str) -> List[str] :
-    with open(file_path) as f :
-        requirements = f.read().split('\n')
-    return requirements[:-1]
-print(get_requirements('requirements.txt'))
+import seaborn , pandas
+from matplotlib import pyplot
+df = pandas.read_csv('/config/workspace/notebooks/data/Diamond.csv')
+seaborn.histplot(data = df , x = 'z' , kde = True)
+pyplot.show()
