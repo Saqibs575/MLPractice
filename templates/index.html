@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <style>
+
+            body{
+                background-color: rgb(47, 52, 18);
+            }
+
+            .Container{
+                padding:150px 20px 20px 30%;
+                background-color: bisque;
+            }
+        
+            form {
+                border-radius: 20px;
+                display: inline-flex;
+                background-color: rgba(132, 0, 0, 0.905);
+                color: white;
+                border: 2px solid black;
+                padding: 20px;
+            }
+
+            .cat-group , .num-group{
+                padding: 40px;
+                border-radius: 0px 40px;
+                border: 3px solid black;
+                background-color: rgba(236, 139, 12, 0.893);
+            }
+
+            label{
+                display: table-row-group;
+                font-weight: bolder;
+                font-size: large;
+            }
+
+            select , input{
+                width: 250px;
+                height: 40px;
+                padding-bottom: 2px;
+                font-size: x-large;
+                font-weight: bold;
+                margin-bottom: 10px;
+                margin-right: 20px;
+            }
+
+            button{
+                border-radius: 0px 30px;
+                width: 100px ;
+                height: 300px;
+                margin-top: 3in;
+                margin-left: 20px;
+                font-weight: bolder;
+                font-size: larger;
+                border-style: solid;
+                border-width: 3px;
+                margin-top: 10px;
+            }
+
+            .Result{
+                background-color: rgba(38, 0, 73, 0.178);
+                width: 68.5%;
+                height: 70px;
+                border-radius: 20px;
+                border: 2px solid black;
+                text-align: center;
+                font-size: xx-large;
+                font-weight: bolder;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .flashing-text{
+                color: rgb(214, 235, 235);
+                border: 4px ridge red;
+                display: inline-flex;
+                width: 9in;
+                height: 0.5in;
+                margin-left: 30%;
+                margin-top: 50px;
+                text-align: center;
+                font-size: larger;
+                align-items: center;
+            }
+
+            button:hover{
+                background-color: rgb(2, 132, 192);
+            }
+            select:hover{
+                background-color: antiquewhite;
+            }
+            input:hover{
+                background-color: antiquewhite;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="Container">
+
+            <div class="Result">
+                PREDICTION : {{result}}
+            </div>
+    
+            <form action="{{url_for('predict')}}" method="POST">
+
+                <div class="cat-group">
+                    <div class = "form-group">
+                        <label>
+                            Cut : 
+                        </label>
+                        <select id = 'cut' name = 'cut' aria-placeholder="Select">
+                            <option value="Fair">
+                                Fair
+                            </option>
+                            <option value="Good">
+                                Good
+                            </option>
+                            <option value="Very Good">
+                                Very Good
+                            </option>
+                            <option value="Premium">
+                                Premium
+                            </option>
+                            <option value="Ideal">
+                                Ideal
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Color : 
+                        </label>
+                        <select id = 'color' name = 'color' aria-placeholder="Select">
+                            <option value="D">
+                                D
+                            </option>
+                            <option value="E">
+                                E
+                            </option>
+                            <option value="F">
+                                F
+                            </option>
+                            <option value="G">
+                                G
+                            </option>
+                            <option value="H">
+                                H
+                            </option>
+                            <option value="I">
+                                I
+                            </option>
+                            <option value="J">
+                                J
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Clarity :
+                        </label>
+                        <select id="clarity" name = 'clarity' aria-placeholder="Select">
+                            <option value="I1">
+                                I1
+                            </option>
+                            <option value="SI2">
+                                SI2
+                            </option>
+                            <option value="SI1">
+                                SI1
+                            </option>
+                            <option value="VS2">
+                                VS2
+                            </option>
+                            <option value="VS1">
+                                VS1
+                            </option>
+                            <option value="VVS2">
+                                VVS2
+                            </option>
+                            <option value="VVS1">
+                                VVS1
+                            </option>
+                            <option value="IF">
+                                IF
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="num-group">
+                    <div class = "form-group">
+                        <label>
+                            Carat : 
+                        </label>
+                        <input type="text" id="carat" name="carat" placeholder="FLoat Value">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Depth : 
+                        </label>
+                        <input type = 'text' id = 'depth' name = 'depth' placeholder="Float Value">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            Table : 
+                        </label>
+                        <input type = 'text' id = 'table' name = 'table' placeholder="Float Value">
+                    </div>
+                </div>
+                <button type="submit">
+                    Predict
+                </button>
+           </form>
+        </div>
+        <p class="flashing-text">PRICE PREDICTED MAY NOT BE 100% ACCURATE. THE PREDICTED PRICE MAY BE DIFFERENT THAN THE ACTUAL ONE.</p> 
+    </body>
+</html>

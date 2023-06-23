@@ -9,6 +9,7 @@ def get_requirements(flie_path : str) -> List[str] :
 setup(
     name = 'ML Practice' ,
     version = '1.0.0' ,
+    author = 'ABC' ,
     author_email = 'abcd575@gmail.com' , 
     install_requires = ['numpy' , 'pandas' , 'Flask'] ,
     packages = find_packages()
