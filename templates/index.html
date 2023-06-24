@@ -54,6 +54,7 @@
                 border-style: solid;
                 border-width: 3px;
                 margin-top: 10px;
+                background-color: rgb(2, 132, 192);
             }
 
             .Result{
@@ -84,7 +85,7 @@
             }
 
             button:hover{
-                background-color: rgb(2, 132, 192);
+                background-color: rgb(8, 154, 221);
             }
             select:hover{
                 background-color: antiquewhite;
@@ -111,19 +112,19 @@
                             Cut : 
                         </label>
                         <select id = 'cut' name = 'cut' aria-placeholder="Select">
-                            <option value="Fair">
+                            <option value="Fair" {% if cut == 'Fair' %}selected{%endif%}>
                                 Fair
                             </option>
-                            <option value="Good">
+                            <option value="Good" {% if cut == 'Good' %}selected{%endif%}>
                                 Good
                             </option>
-                            <option value="Very Good">
+                            <option value="Very Good" {% if cut == 'Very Good' %}selected{%endif%}>
                                 Very Good
                             </option>
-                            <option value="Premium">
+                            <option value="Premium" {% if cut == 'Premium' %}selected{%endif%}>
                                 Premium
                             </option>
-                            <option value="Ideal">
+                            <option value="Ideal" {% if cut == 'Ideal' %}selected{%endif%}>
                                 Ideal
                             </option>
                         </select>
@@ -134,25 +135,25 @@
                             Color : 
                         </label>
                         <select id = 'color' name = 'color' aria-placeholder="Select">
-                            <option value="D">
+                            <option value="D" {% if color == 'D' %}selected{%endif%}>
                                 D
                             </option>
-                            <option value="E">
+                            <option value="E" {% if color == 'E' %}selected{%endif%}>
                                 E
                             </option>
-                            <option value="F">
+                            <option value="F" {% if color == 'F' %}selected{%endif%}>
                                 F
                             </option>
-                            <option value="G">
+                            <option value="G" {% if color == 'G' %}selected{%endif%}>
                                 G
                             </option>
-                            <option value="H">
+                            <option value="H" {% if color == 'H' %}selected{%endif%}>
                                 H
                             </option>
-                            <option value="I">
+                            <option value="I" {% if color == 'I' %}selected{%endif%}>
                                 I
                             </option>
-                            <option value="J">
+                            <option value="J" {% if color == 'J' %}selected{%endif%}>
                                 J
                             </option>
                         </select>
@@ -162,29 +163,29 @@
                         <label>
                             Clarity :
                         </label>
-                        <select id="clarity" name = 'clarity' aria-placeholder="Select">
-                            <option value="I1">
+                        <select id="clarity" name = 'clarity' aria-placeholder="Select" value = '{{clarity}}'>
+                            <option value="I1" {% if clarity == 'I1' %}selected{%endif%}>
                                 I1
                             </option>
-                            <option value="SI2">
+                            <option value="SI2" {% if clarity == 'SI2' %}selected{%endif%}>
                                 SI2
                             </option>
-                            <option value="SI1">
+                            <option value="SI1" {% if clarity == 'SI1' %}selected{%endif%}>
                                 SI1
                             </option>
-                            <option value="VS2">
+                            <option value="VS2" {% if clarity == 'VS2' %}selected{%endif%}>
                                 VS2
                             </option>
-                            <option value="VS1">
+                            <option value="VS1" {% if clarity == 'VS1' %}selected{%endif%}>
                                 VS1
                             </option>
-                            <option value="VVS2">
+                            <option value="VVS2" {% if clarity == 'VVS2' %}selected{%endif%}>
                                 VVS2
                             </option>
-                            <option value="VVS1">
+                            <option value="VVS1" {% if clarity == 'VVS1' %}selected{%endif%}>
                                 VVS1
                             </option>
-                            <option value="IF">
+                            <option value="IF" {% if clarity == 'IF' %}selected{%endif%}>
                                 IF
                             </option>
                         </select>
@@ -196,28 +197,28 @@
                         <label>
                             Carat : 
                         </label>
-                        <input type="text" id="carat" name="carat" placeholder="FLoat Value">
+                        <input type="text" id="carat" name="carat" placeholder="FLoat Value" value = "{{carat}}">
                     </div>
 
                     <div class="form-group">
                         <label>
                             Depth : 
                         </label>
-                        <input type = 'text' id = 'depth' name = 'depth' placeholder="Float Value">
+                        <input type = 'text' id = 'depth' name = 'depth' placeholder="Float Value" value = "{{depth}}">
                     </div>
 
                     <div class="form-group">
                         <label>
                             Table : 
                         </label>
-                        <input type = 'text' id = 'table' name = 'table' placeholder="Float Value">
+                        <input type = 'text' id = 'table' name = 'table' placeholder="Float Value" value = "{{table}}">
                     </div>
                 </div>
                 <button type="submit">
-                    Predict
+                    PREDICT
                 </button>
            </form>
         </div>
-        <p class="flashing-text">PRICE PREDICTED MAY NOT BE 100% ACCURATE. THE PREDICTED PRICE MAY BE DIFFERENT THAN THE ACTUAL ONE.</p> 
+        <p class="flashing-text">PREDICTED PRICE MAY NOT BE 100% ACCURATE. THE PREDICTED PRICE MAY BE DIFFERENT THAN THE ACTUAL ONE.</p> 
     </body>
 </html>
