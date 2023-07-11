@@ -4,28 +4,25 @@ The Purpose of the project is to prdict the price of the Diamond Based on variou
 [CLICK HERE FOR KAGGLE DATA SET LINK](https://www.kaggle.com/competitions/playground-series-s3e8/data?select=train.csv)
 
 ## About Data Set
-* **price** : price in US dollars ( $326 - $18,823 ) 
+* **price** : Price of the Diamond
 
- * **carat** : weight of the diamond ( 0.2 - 5.01 )
+ * **carat** : Weight of the Diamond
 
- * **cut** : quality of the cut ( Fair , Good , Very Good , Premium , Ideal )
+ * **cut** : Quality of the cut ( Fair , Good , Very Good , Premium , Ideal ) --> Ordinal Classification Worst to Best
 
- * **color** : diamond colour, from J ( worst ) to D ( best )
+ * **color** : Diamond Colour, from J ( worst ) to D ( best )
 
- * **clarity** : a measurement of how clear the diamond is ( I1 (worst) ,SI2 ,SI1 ,VS2 ,VS1 ,VVS2 ,VVS1 ,IF (best))
+ * **clarity** : A measurement of how clear the Diamond is ( I1,SI2 ,SI1 ,VS2 ,VS1 ,VVS2 ,VVS1 ,IF ) --> Ordinal Categories Worst to Best.
 
- * **x** : length in mm ( 0 - 10.74 )
+ * **x** : Diamond Length in mm
 
- * **y** : width in mm ( 0 - 58.9 )
+ * **y** : Diamond Width in mm ( 0 - 58.9 )
 
- * **z** : depth in mm ( 0 - 31.8 )
+ * **z** : Diamond Depth in mm ( 0 - 31.8 )
 
- * **depth** : total depth percentage = z / mean( x, y ) = 2 * z / ( x + y ) --> ( 43 - 79 )
+ * **depth** : Total depth in percentage 
 
- * **table** : width of top of diamond relative to widest point ( 43 - 95 )
-
-
-
+ * **table** : Width of top of Diamond relative to widest point
 
 
 
