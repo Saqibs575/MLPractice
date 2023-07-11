@@ -50,7 +50,7 @@ git clone https://github.com/Saqibs575/MLPractice
 
 2. Navigate to the project directory:
 ```
-cd DiamondPricePrediction
+cd MLPractice
 ```
 3. Install dependencies:
 ```
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 ```
 4. Set up :
 ```
-python application.py
+python app.py
 ```
 5. Start the server:
 ```
