@@ -24,6 +24,46 @@ The Purpose of the project is to prdict the price of the Diamond Based on variou
 
  * **table** : Width of top of Diamond relative to widest point
 
+# Requirements
+- [sklearn](https://scikit-learn.org/stable/)
+- [pandas](https://www.w3schools.com/python/pandas/default.asp)
+- [flask](https://flask.palletsprojects.com/en/2.3.x/)
+- [seaborn](https://seaborn.pydata.org/)
+- [python](https://www.python.org/)
+
+# Installation and Usage
+
+To install webApp, follow these steps:
+
+Environment Setup
+```
+conda create -p venv python==3.8
+```
+```
+conda activate venv/
+```
+
+1. Clone the repository:
+```
+git clone https://github.com/Saqibs575/DiamondPricePrediction.git
+```
+
+2. Navigate to the project directory:
+```
+cd DiamondPricePrediction
+```
+3. Install dependencies:
+```
+pip install -r requirements.txt
+```
+4. Set up :
+```
+python application.py
+```
+5. Start the server:
+```
+http://127.0.0.1:5000/
+```
 
 
 
