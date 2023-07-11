@@ -101,9 +101,13 @@ http://127.0.0.1:5000/
 │   
 │ 
 │ 
-├──> application.py                              - Web Application using Flask.
+├──> app.py                                  - Web Application using Flask.
+|			
+|						
+├──> requirements.txt                        - All dependencies.				
 │					
-    └──>setup.py                                 - project's metadata and configuration details
+│					
+└──>setup.py                                 - project's metadata and configuration details
 ```
 
 
