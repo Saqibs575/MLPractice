@@ -45,7 +45,7 @@ conda activate venv/
 
 1. Clone the repository:
 ```
-git clone https://github.com/Saqibs575/DiamondPricePrediction.git
+git clone https://github.com/Saqibs575/MLPractice
 ```
 
 2. Navigate to the project directory:
@@ -64,7 +64,47 @@ python application.py
 ```
 http://127.0.0.1:5000/
 ```
+##  Project Architecture
 
+```
+├──>  artifacts                             - In artifacts we have training data test data and hrad copy of model in pickle file.
+│        └──> preprocessor.pkl  
+│        └──> model.pkl
+│        └──> raw.csv
+│        └──> train.csv
+│        └──> test.csv
+│ 
+│
+├──>  notebooks  
+│        └──> EDA.ipynb                        - Notebook for Exploratory Data Analysis (EDA).
+│        └──> Model_Training.ipynb             - Notebook for Model training.
+│        └──> data 		                         - here's the folder for dataset.
+│              └──> Diamond.csv                - Diamond Data set in raw format.
+│
+│
+├──> src                                         - The "src" folder, short for "source".
+│     └──> exception.py                          - Exception handling.
+│     └──> logger.py                             - log file handling.
+│     └──> utils.py                              - util functions.
+│     └──> components
+│              └──> data_ingestion.py            - Data Ingestion Process.
+│              └──> data_transformation.py       - Data Transformation Process.
+│              └──> model_trainer.py             - Model training Process.
+│     └──> pipelines
+│              └──> prediction_pipeline.py       - Pipeline for prediction.
+│              └──> training_pipeline.py         - Pipeline for training. 
+│
+│
+├──> templates                                   - html and CSS  UI.
+│       └──> home_page.html                           - html and CSS file for Home Page UI.           
+│       └──> home_page.html                           - html and CSS file for Prediction Page UI.           
+│   
+│ 
+│ 
+├──> application.py                              - Web Application using Flask.
+│					
+    └──>setup.py                                 - project's metadata and configuration details
+```
 
 
 
