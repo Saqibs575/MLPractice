@@ -82,7 +82,7 @@ http://127.0.0.1:5000/
 │              └──> Diamond.csv                - Diamond Data set in raw format.
 │
 │
-├──> src                                         - The "src" folder, short for "source".
+├──> src                                         - Source folder.
 │     └──> exception.py                          - Exception handling.
 │     └──> logger.py                             - log file handling.
 │     └──> utils.py                              - util functions.
