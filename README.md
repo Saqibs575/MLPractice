@@ -4,25 +4,25 @@ The Purpose of the project is to prdict the price of the Diamond Based on variou
 [CLICK HERE FOR KAGGLE DATA SET LINK](https://www.kaggle.com/competitions/playground-series-s3e8/data?select=train.csv)
 
 ## About Data Set
-* **price** : Price of the Diamond
+* **price** : Price of the Diamond.
 
- * **carat** : Weight of the Diamond
+ * **carat** : Weight of the Diamond.
 
- * **cut** : Quality of the cut ( Fair , Good , Very Good , Premium , Ideal ) --> Ordinal Classification Worst to Best
+ * **cut** : Quality of the cut ( Fair , Good , Very Good , Premium , Ideal ) --> Ordinal Classification Worst to Best.
 
- * **color** : Diamond Colour, from J ( worst ) to D ( best )
+ * **color** : Diamond Colour, from J ( worst ) to D ( best ).
 
  * **clarity** : A measurement of how clear the Diamond is ( I1,SI2 ,SI1 ,VS2 ,VS1 ,VVS2 ,VVS1 ,IF ) --> Ordinal Categories Worst to Best.
 
- * **x** : Diamond Length in mm
+ * **x** : Diamond Length in mm.
 
- * **y** : Diamond Width in mm ( 0 - 58.9 )
+ * **y** : Diamond Width in mm.
 
- * **z** : Diamond Depth in mm ( 0 - 31.8 )
+ * **z** : Diamond Depth in mm.
 
- * **depth** : Total depth in percentage 
+ * **depth** : Total depth in percentage. 
 
- * **table** : Width of top of Diamond relative to widest point
+ * **table** : Width of top of Diamond relative to widest point.
 
 # Requirements
 - [sklearn](https://scikit-learn.org/stable/)
