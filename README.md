@@ -78,7 +78,7 @@ http://127.0.0.1:5000/
 ├──>  notebooks  
 │        └──> EDA.ipynb                        - Notebook for Exploratory Data Analysis (EDA).
 │        └──> Model_Training.ipynb             - Notebook for Model training.
-│        └──> data 		                         - here's the folder for dataset.
+│        └──> data 		                         
 │              └──> Diamond.csv                - Diamond Data set in raw format.
 │
 │
